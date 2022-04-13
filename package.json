@@ -1,0 +1,7 @@
+{
+  "name": "edtech-components",
+  "version": "1.0.0",
+  "devDependencies": {
+    "svelte": "^3.43.1"
+  }
+}
