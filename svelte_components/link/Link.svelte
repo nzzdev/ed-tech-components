@@ -7,7 +7,7 @@
 
   function openUrl(url) {
     if (window.NZZ && vamp.navigateToArticle) {
-      vamp.navigateToArticle(url.substr(url.lastIndexOf("Id.") + 1));
+      vamp.navigateToArticle(url.substr(url.lastIndexOf("ld.") + 3));
     } else {
       window.open(url, linkTarget).focus();
     }
