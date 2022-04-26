@@ -4,27 +4,27 @@ $base-margin: 8px;
 $tab-container-max-width: 640px;
 $border-radius: 12px;
 
-.etc-tabs-container {
+.nzz-qcc-tabs-container {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 
-  .etc-tabs-inner-container {
+  .nzz-qcc-tabs-inner-container {
     flex: 1;
     display: flex;
     flex-direction: column;
     max-width: $tab-container-max-width;
   }
 
-  .etc-tabs {
+  .nzz-qcc-tabs {
     flex: 1;
     display: flex;
     flex-direction: row;
     margin-top: $base-margin;
   }
 
-  .etc-tab.s-button.s-button--small {
+  .nzz-qcc-tab.s-button.s-button--small {
     background-color: $tabs-color;
     color: $font-color-primary;
     border-radius: $border-radius;
@@ -46,12 +46,12 @@ $border-radius: 12px;
       margin-right: $base-margin;
     }
 
-    &.etc-tab--active {
+    &.nzz-qcc-tab--active {
       font-weight: 400;
     }
   }
 
-  .etc-tab-container {
+  .nzz-qcc-tab-container {
     background-color: $tabs-color;
     border-radius: $border-radius;
     padding: $base-margin * 2 $base-margin $base-margin $base-margin * 2;
@@ -59,28 +59,28 @@ $border-radius: 12px;
     flex-direction: row;
   }
 
-  .etc-tab--text-align-end {
+  .nzz-qcc-tab--text-align-end {
     text-align: end;
     margin-right: 0;
   }
 
-  .etc-tab-container--active {
+  .nzz-qcc-tab-container--active {
     border-top-left-radius: 0;
   }
 
-  &.etc-tabs-container--expanded {
-    .etc-tab.s-button.s-button--small {
+  &.nzz-qcc-tabs-container--expanded {
+    .nzz-qcc-tab.s-button.s-button--small {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
 
-      &:not(.etc-tab--active) {
+      &:not(.nzz-qcc-tab--active) {
         background-color: lighten($tabs-color, 2%);
       }
     }
   }
 
-  &.etc-tabs-container--desktop {
-    .etc-tab.s-button.s-button--small:hover {
+  &.nzz-qcc-tabs-container--desktop {
+    .nzz-qcc-tab.s-button.s-button--small:hover {
       background-color: darken($tabs-color, 5%);
     }
   }

@@ -20,15 +20,15 @@
 </script>
 
 <div
-  class="etc-tabs-container {activeTab ? 'etc-tabs-container--expanded' : ''} 
-    {isSmallDisplayPort ? '' : 'etc-tabs-container--desktop'}"
+  class="nzz-qcc-tabs-container {activeTab ? 'nzz-qcc-tabs-container--expanded' : ''} 
+    {isSmallDisplayPort ? '' : 'nzz-qcc-tabs-container--desktop'}"
 >
-  <div class="etc-tabs-inner-container">
-    <div class="etc-tabs">
+  <div class="nzz-qcc-tabs-inner-container">
+    <div class="nzz-qcc-tabs">
       {#each tabs as tab}
         <button
-          class="etc-tab s-button s-button--small 
-          {activeTab === tab.id ? 'etc-tab--active' : ''}"
+          class="nzz-qcc-tab s-button s-button--small 
+          {activeTab === tab.id ? 'nzz-qcc-tab--active' : ''}"
           on:click|preventDefault={() => toggleTab(tab.id)}
         >
           {tab.label}
@@ -37,7 +37,7 @@
     </div>
     {#if activeTab}
       <div
-        class="etc-tab-container {activeTab ? 'etc-tab-container--active' : ''}"
+        class="nzz-qcc-tab-container {activeTab ? 'nzz-qcc-tab-container--active' : ''}"
       >
         {#if activeTab === "LegendComponent"}
         Legend component comes in here
