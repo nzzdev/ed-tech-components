@@ -1,7 +1,7 @@
 {
-  "name": "edtech-components",
+  "name": "ed-tech-components",
   "version": "1.0.0",
-  "devDependencies": {
+  "dependencies": {
     "@nzz/nzz.ch-static": "github:nzzdev/ed-tech-nzz.ch-static#v1.0.0",
     "@nzz/q-cli": "^1.4.11",
     "@rollup/plugin-alias": "^3.1.9",
@@ -29,6 +29,21 @@
   "scripts": {
     "rollup": "rollup -c -w",
     "build": "rollup -c",
-    "update-docs": "npm run build"
+    "update-docs": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/builder-webpack4": "^6.5.13",
+    "@storybook/manager-webpack4": "^6.5.13",
+    "@storybook/svelte": "^6.5.13",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.2.5",
+    "svelte-loader": "^3.1.3"
   }
 }
