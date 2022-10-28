@@ -1,5 +1,5 @@
 import { default as Link } from "./../components/link/Link.svelte";
-import { LinkArgs } from "../components/link/Link.interfaces";
+import type { LinkArgs } from "../components/link/Link.interfaces";
 
 export default {
   title: "Components/Link",
