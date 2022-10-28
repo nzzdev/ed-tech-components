@@ -30,11 +30,11 @@ const Template = (args: LinkArgs) => ({
   props: args,
 });
 
-export const DefaultStory: { args: LinkArgs } = Template.bind({});
-DefaultStory.args = { ...defaultArgs };
+export const Defaults: { args: LinkArgs } = Template.bind({});
+Defaults.args = { ...defaultArgs };
 
-export const ElementTypeSpanStory: { args: LinkArgs } = Template.bind({});
-ElementTypeSpanStory.args = {
+export const ElementTypeSpan: { args: LinkArgs } = Template.bind({});
+ElementTypeSpan.args = {
   ...defaultArgs,
   elementType: "span",
 };

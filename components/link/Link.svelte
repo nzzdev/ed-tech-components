@@ -1,10 +1,10 @@
 <script lang="ts">
-  // Component for handling internal & external links in all environments (Desktop, Mobile, Mobile-App)
   export let url: string;
   export let linkTarget = "";
   export let innerHtml: string;
   export let elementType: "div" | "span" = "div";
 
+  // Handles internal & external links for Mobile-App, Desktop- & Mobile-Browser
   function openUrl(url: string) {
     if ((window as any).NZZ && vamp.navigateToArticle) {
       vamp.navigateToArticle(url.substring(url.lastIndexOf("ld.") + 3));
@@ -25,7 +25,12 @@
 {/if}
 
 <style lang="scss">
-  @mixin textUnderline($color: #05032d, $width: 1px) {
+  // Style overwrite example: <Link --underline-color:"salmon" ... />
+  // See: https://svelte.dev/docs#template-syntax-component-directives---style-props
+  @mixin textUnderline(
+    $color: var(--underline-color, #05032d),
+    $width: var(--underline-width, 1px)
+  ) {
     background-image: linear-gradient(90deg, $color, $color);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -39,7 +44,7 @@
     text-decoration: none;
 
     &:hover {
-      opacity: 0.6;
+      opacity: var(--hover-opacity, 0.6);
     }
   }
 </style>
