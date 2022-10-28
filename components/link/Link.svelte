@@ -1,10 +1,10 @@
 <script>
-  // Component for handling internal & external links in all environments (Desktop, Mobile, Mobile-App)
   export let url;
   export let linkTarget = "";
   export let innerHtml;
   export let elementType = "div";
 
+  // Handles internal & external links in all environments (Desktop, Mobile, Mobile-App)
   function openUrl(url) {
     if (window.NZZ && vamp.navigateToArticle) {
       vamp.navigateToArticle(url.substr(url.lastIndexOf("ld.") + 3));

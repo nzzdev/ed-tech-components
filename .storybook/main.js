@@ -1,12 +1,21 @@
 module.exports = {
-  "stories": [
+  // Plugged: https://github.com/storybookjs/addon-svelte-csf/issues/4#issuecomment-948251197
+  webpackFinal: async (config) => {
+    const svelteLoader = config.module.rules.find(
+      (r) => r.loader && r.loader.includes("svelte-loader")
+    );
+    svelteLoader.options.preprocess = require("svelte-preprocess")();
+    return config;
+  },
+  stories: [
     "../stories/**/*.stories.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx|svelte)"
+    "../stories/**/*.stories.@(js|jsx|ts|tsx|svelte)",
   ],
-  "addons": [
+  addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions"
+    "@storybook/addon-interactions",
+    "@storybook/addon-svelte-csf",
   ],
-  "framework": "@storybook/svelte"
-}
+  framework: "@storybook/svelte",
+};
