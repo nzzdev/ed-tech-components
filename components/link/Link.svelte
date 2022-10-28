@@ -23,3 +23,23 @@
     {@html innerHtml}
   </span>
 {/if}
+
+<style lang="scss">
+  @mixin textUnderline($color: #05032d, $width: 1px) {
+    background-image: linear-gradient(90deg, $color, $color);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% $width;
+  }
+
+  .nzz-qcc-link {
+    @include textUnderline();
+
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+</style>

@@ -2,7 +2,7 @@ import { default as Link } from "./../components/link/Link.svelte";
 import { LinkArgs } from "../components/link/Link.interfaces";
 
 export default {
-  title: "Link",
+  title: "Components/Link",
   component: Link,
   argTypes: {
     url: { control: "text" },
