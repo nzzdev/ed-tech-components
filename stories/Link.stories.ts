@@ -7,11 +7,16 @@ export default {
   argTypes: {
     url: { control: "text" },
     innerHtml: { control: "text" },
+    elementType: {
+      control: { type: "select" },
+      options: ["div", "span"],
+      defaultValue: "div",
+    },
     linkTarget: {
       control: { type: "select" },
       options: ["", "_self", "_blank", "_parent", "_top"],
+      defaultValue: "",
     },
-    elementType: { control: { type: "select" }, options: ["div", "span"] },
   },
 };
 
