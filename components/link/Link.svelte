@@ -1,7 +1,6 @@
 <script lang="ts">
   export let url: string;
   export let linkTarget = "";
-  export let innerHtml: string;
   export let elementType: "div" | "span" = "div";
 
   // Handles internal & external links for Mobile-App, Desktop- & Mobile-Browser
@@ -16,11 +15,11 @@
 
 {#if elementType === "div"}
   <div on:click={() => openUrl(url)} on:keydown class="nzz-qcc-link">
-    {@html innerHtml}
+    <slot />
   </div>
 {:else if elementType === "span"}
   <span on:click={() => openUrl(url)} on:keydown class="nzz-qcc-link">
-    {@html innerHtml}
+    <slot />
   </span>
 {/if}
 
