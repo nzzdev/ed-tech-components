@@ -1,5 +1,4 @@
-// 'data driven' template generation example
-// NOTE: Same as Link.stories.svelte
+// Excluded 'Data Driven' template generation example
 import { default as Link } from "./../components/link/Link.svelte";
 import type { LinkArgs } from "../components/link/Link.interfaces";
 
