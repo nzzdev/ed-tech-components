@@ -1,3 +1,5 @@
+// 'data driven' template generation example
+// NOTE: Same as Link.stories.svelte
 import { default as Link } from "./../components/link/Link.svelte";
 import type { LinkArgs } from "../components/link/Link.interfaces";
 
@@ -22,7 +24,6 @@ export default {
 
 const defaultArgs: LinkArgs = {
   url: "https://www.nzz.ch/technologie/abschied-vom-passwort-wie-man-sich-in-zukunft-einloggen-wird-ld.1701475",
-  innerHtml: "Zum Artikel",
 };
 
 // TODO: Replace type with 'Story<component-name>' after type exists in svelte specific .d.ts file
