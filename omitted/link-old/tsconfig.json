@@ -1,0 +1,15 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "include": ["src/**/*", "src/node_modules"],
+  // TODO: Check if sapper & public is needed
+  "exclude": ["node_modules/*", "test/**/*", "__sapper__/*", "public/*"],
+  "compilerOptions": {
+    "lib": ["es2018"],
+    "types": ["svelte"],
+    "outDir": "dist",
+    "declaration": true,
+    "moduleResolution": "node"
+    // Allows for correct type inferring of '.bind()'
+    //"strictBindCallApply": true
+  }
+}

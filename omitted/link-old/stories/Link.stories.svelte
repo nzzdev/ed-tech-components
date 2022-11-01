@@ -4,7 +4,7 @@
 -->
 <script>
   import { Meta, Story, Template } from "@storybook/addon-svelte-csf";
-  import Link from "../components/link/Link.svelte";
+  import Link from "../Link.svelte";
 
   const defaultArgs = {
     url:

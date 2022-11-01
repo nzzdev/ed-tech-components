@@ -1,6 +1,6 @@
 // Excluded 'Data Driven' template generation example
-import { default as Link } from "./../components/link/Link.svelte";
-import type { LinkArgs } from "../components/link/Link.interfaces";
+import { default as Link } from "./../src/Link.svelte";
+import type { LinkArgs } from "../src/Link.interfaces";
 
 export default {
   title: "Components/Link",

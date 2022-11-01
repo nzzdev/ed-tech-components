@@ -2,7 +2,8 @@ const preprocess = require("svelte-preprocess");
 
 module.exports = {
   stories: [
-    "../stories/**/*.stories.svelte",
+    //"../stories/**/*.stories.svelte",
+    "../components/!(node_modules)**/*.stories.svelte",
     // Uncomment to support 'Data Driven' stories
     //"../stories/**/*.stories.@(js|jsx|ts|tsx)",
   ],
